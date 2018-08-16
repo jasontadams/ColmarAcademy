@@ -1,0 +1,50 @@
+/* Page-wide styles */
+body {
+  font-family: helvetica;
+  color: rgb(48,48,48);
+}
+
+a:link {
+  color: rgb(48,48,48);
+  text-decoration-line: none;
+}
+
+.nav-link {
+  margin: 0 0.5rem;
+}
+
+/* Style the Header */
+#header {
+  display: flex;
+  height: 4rem;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+
+/* Style the Logo */
+#logo {
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+#logosecond {
+  color: DarkGray;
+  font-weight: normal;
+}
+
+#logo img {
+    height: 2rem;
+}
+
+/*Style the Header Navigantion Links */
+#header-nav {
+  display: inline-flex;
+  align-items: center;
+}
+
+#header-nav li {
+  font-size: 0.80rem;
+}
