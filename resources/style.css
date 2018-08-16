@@ -18,6 +18,19 @@ p {
   font-size: 0.5rem;
 }
 
+h1  {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
 /* Style the Header */
 #header {
   display: flex;
@@ -44,7 +57,7 @@ p {
     height: 2rem;
 }
 
-/*Style the Header Navigantion Links */
+/*Style the Header Navigation Links */
 #header-nav {
   display: inline-flex;
   align-items: center;
@@ -52,6 +65,44 @@ p {
 
 #header-nav li {
   font-size: 0.80rem;
+}
+
+/* Style Main Elements */
+/* Style Banner */
+#main-banner {
+  display: flex;
+  background-color: LightGray;
+  align-items: center;
+}
+
+#banner-photo {
+  height: 60%;
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+#banner-flavor {
+  display: flex;
+  flex-direction: column;
+}
+
+.flavor-element {
+  margin-bottom: 1.5rem;
+}
+
+#banner-button {
+  display: flex;
+  background-color: rgb(48,48,48);
+  justify-content: center;
+  width: 80%;
+}
+
+#banner-button a:link, a:visited {
+  color: LightGray;
+}
+
+#banner-button a {
+  margin: 0.5rem;
 }
 
 /* Style the footer */
