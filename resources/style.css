@@ -2,11 +2,17 @@
 body {
   font-family: helvetica;
   color: rgb(48,48,48);
+  font-size: 16px;
 }
 
-a:link {
+a:link, a:visited {
   color: rgb(48,48,48);
   text-decoration-line: none;
+}
+
+.nav {
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-link {
@@ -14,20 +20,24 @@ a:link {
 }
 
 p {
-  color: DarkGray;
-  font-size: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 h1  {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
   font-size: 1rem;
 }
 
@@ -57,35 +67,23 @@ h3 {
     height: 2rem;
 }
 
-/*Style the Header Navigation Links */
-#header-nav {
-  display: inline-flex;
-  align-items: center;
-}
-
-#header-nav li {
-  font-size: 0.80rem;
-}
-
 /* Style Main Elements */
 .left-pane {
   width: 60%;
   overflow: hidden;
-  margin: 2rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .left-pane img {
   width: 100%;
   height: auto;
+  margin-bottom: 1.5rem;
 }
 
 .right-pane {
   display: flex;
+  width: 40%;
   flex-direction: column;
-}
-
-.flavor-element {
-  margin-bottom: 1.5rem;
 }
 
 /* Style Banner */
@@ -101,11 +99,8 @@ h3 {
   width: 80%;
 }
 
-#banner-button a:link, a:visited {
-  color: LightGray;
-}
-
 #banner-button a {
+  color: Lightgray;
   margin: 0.5rem;
 }
 
@@ -114,20 +109,15 @@ h3 {
   display: flex;
 }
 
+
 /* Style the footer */
 #footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.5rem;
-  color: DarkGray;
   padding: 1.5rem;
 }
 
 #footer h3 {
   margin-left: 0.5rem;
-}
-
-#footer-nav {
-  display: inline-flex;
 }
