@@ -5,7 +5,7 @@ body {
   font-size: 16px;
 }
 
-a:link, a:visited {
+.styleda:link, .styleda:visited {
   color: rgb(48,48,48);
   text-decoration-line: none;
 }
@@ -21,7 +21,7 @@ a:link, a:visited {
 
 p {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  line-height: 1.5;
 }
 
 h1  {
@@ -35,10 +35,20 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 h4 {
   font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+img, video {
+  height: auto;
+  width: 100%;
 }
 
 /* Style the Header */
@@ -67,23 +77,65 @@ h4 {
     height: 2rem;
 }
 
-/* Style Main Elements */
+/* Style Elements used throughout Main */
 .left-pane {
   width: 60%;
   overflow: hidden;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 0.5rem 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.left-pane img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 1.5rem;
+.left-pane p {
+  margin: 1.5rem 0;
+}
+
+.left-pane img  {
+  padding-bottom: 2rem;
 }
 
 .right-pane {
-  display: flex;
+  display: inline-flex;
   width: 40%;
   flex-direction: column;
+}
+
+.info-boxes {
+  display: inline-flex;
+  overflow: hidden;
+  border-bottom-style: double;
+  border-bottom-color: LightGray;
+  border-bottom-width: thin;
+  padding: 1rem;
+}
+
+.info-boxes-photo {
+  display: flex;
+  align-items: center;
+  width: 35%;
+}
+
+.info-text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.info-text h4 {
+  margin: 0.5rem 0;
+}
+
+.title-box {
+  display: flex;
+  justify-content: center;
+}
+
+.title-box h1 {
+  padding-top: 2rem;
 }
 
 /* Style Banner */
@@ -92,6 +144,7 @@ h4 {
   background-color: LightGray;
   align-items: center;
 }
+
 #banner-button {
   display: flex;
   background-color: rgb(48,48,48);
@@ -104,11 +157,49 @@ h4 {
   margin: 0.5rem;
 }
 
+#flavor-element {
+  margin: 1.5rem 0;
+  font-weight: normal;
+}
+
 /* Style the Information box */
 #main-information {
   display: flex;
+  margin-bottom: 2rem;
 }
 
+#info-cards {
+  padding-top: 1rem;
+  border-left-color: LightGray;
+  border-left-style: solid;
+  border-left-width: thin;
+}
+
+#sack {
+  background-color: LightGray;
+}
+
+/* Style the Thesis section */
+#thesis-content {
+  display: flex;
+}
+
+.left-pane video {
+  background-color: LightGray;
+  margin-bottom: 1.5rem;
+}
+
+#thesis-cards {
+  padding-top: 2rem;
+}
+
+#thesis-fisma {
+  background-color: LightGray;
+}
+
+#new-york {
+  border-bottom: none;
+}
 
 /* Style the footer */
 #footer {
@@ -116,6 +207,7 @@ h4 {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem;
+  border-top: thin solid LightGray;
 }
 
 #footer h3 {

@@ -15,10 +15,10 @@
         <h3 id="logosecond">Academy</h3>
       </div>
       <ul class="nav">
-        <li class="nav-link"><a href="#">On Campus</a></li>
-        <li class="nav-link"><a href="#">Online</a></li>
-        <li class="nav-link"><a href="#">For Companies</a></li>
-        <li class="nav-link"><a href="#">Sign In</a></li>
+        <li class="nav-link"><a class="styleda" href="#">On Campus</a></li>
+        <li class="nav-link"><a class="styleda" href="#">Online</a></li>
+        <li class="nav-link"><a class="styleda" href="#">For Companies</a></li>
+        <li class="nav-link"><a class="styleda" href="#">Sign In</a></li>
       </ul>
     </div>
     <!--Main Page Content-->
@@ -29,10 +29,10 @@
           <img src=".\resources\images\banner.jpg" alt="Students studying at Colmar Academy">
         </div>
         <div class="right-pane">
-          <h1 class="flavor-element">Learn something new everyday</h1>
-          <h3 class="flavor-element">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-          <div class="flavor-element" id="banner-button">
-            <a href="#">Start Here</a>
+          <h1>Learn something new everyday</h1>
+          <h3 id="flavor-element">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+          <div id="banner-button">
+            <a class="styleda" href="#">Start Here</a>
           </div>
         </div>
       </div>
@@ -42,26 +42,38 @@
           <img src=".\resources\images\information-main.jpg" alt="Emanuel, a graduate of Colmar Academy">
           <h1>It doesn't hurt to keep practicing</h1>
           <p>"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-          <h3>Emanuel, Sr Strategist at Hiring.com</h3>
+          <h5>Emanuel, Sr Strategist at Hiring.com</h5>
         </div>
-        <div class="right-pane">
-          <div class="info-boxes" id="info-orientation">
-            <div id="orientation-photo"></div>
-            <h2>Orientation date</h2>
-            <h3>Tue 10/11 & Wed 10/12: 8am-3pm</h3>
-            <a href="#">Read More</a>
+        <div class="right-pane" id="info-cards">
+          <div class="info-boxes">
+            <div class="info-boxes-photo">
+              <img src=".\resources\images\information-orientation.jpg" alt="Students walking to orientation">
+            </div>
+            <div class="info-text">
+              <h3>Orientation date</h3>
+              <h4>Tue 10/11 & Wed 10/12: 8am-3pm</h4>
+              <a href="#">Read More</a>
+            </div>
           </div>
-          <div class="info-boxes" id="info-campus">
-            <div id="campus-photo"></div>
-            <h2>Our Campus</h2>
-            <h3>Find which campus is close by you</h3>
-            <a href="#">Read More</a>
+          <div class="info-boxes">
+            <div class="info-boxes-photo">
+              <img src=".\resources\images\information-campus.jpg" alt="Student union building">
+            </div>
+            <div class="info-text">
+              <h3>Our Campus</h3>
+              <h4>Find which campus is close by you</h4>
+              <a href="#">Read More</a>
+            </div>
           </div>
-          <div class="info-boxes" id="info-guest">
-            <div id="guest-photo"></div>
-            <h2>Our guest lecture</h2>
-            <h3>Join a keynote with Oliver Sack about music in medical treatment</h3>
-            <a href="#">Read More</a>
+          <div class="info-boxes" id="sack">
+            <div class="info-boxes-photo">
+              <img src=".\resources\images\information-guest-lecture.jpg" alt="Doctor Oliver Sack">
+            </div>
+            <div class="info-text">
+              <h3>Our guest lecture</h3>
+              <h4>Join a keynote with Oliver Sack about music in medical treatment</h4>
+              <a href="#">Read More</a>
+            </div>
           </div>
         </div>
       </div>
@@ -109,23 +121,33 @@
       </div>
       <!--Thesis Section -->
       <div id="main-thesis">
-        <h1>Thesis Exhibit</h1>
+        <div class="title-box">
+          <h1>Thesis Exhibit</h1>
+        </div>
         <div id="thesis-content">
-          <div id="thesis-video-box">
-            <div id="thesis-video"></div>
-            <h2>Reimagine Urban</h2>
+          <div class="left-pane">
+            <video src=".\resources\videos\thesis.mp4" controls></video>
+            <h3>Reimagine Urban</h3>
             <p>"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           </div>
-          <div id="thesis-cards">
-            <div class="thesis-boxes" id="thesis-fisma">
-              <div class="thesis-photo"></div>
-              <h2>FISMA: Design and Prototype</h2>
-              <h3>Designer showcase of new prototype product</h3>
+          <div class="right-pane" id="thesis-cards">
+            <div class="info-boxes" id="thesis-fisma">
+              <div class="info-boxes-photo">
+                <img src=".\resources\images\thesis-fisma.jpg" alt="Design and Prototype">
+              </div>
+              <div class="info-text">
+                <h3>FISMA: Design and Prototype</h3>
+                <h4>Designer showcase of new prototype product</h4>
+              </div>
             </div>
-            <div class="thesis-boxes" id="thesis-new-york">
-              <div class="thesis-photo"></div>
-              <h2>Now and then</h2>
-              <h3>Research study about New York</h3>
+            <div class="info-boxes" id="new-york">
+              <div class="info-boxes-photo">
+                <img src=".\resources\images\thesis-now-and-then.jpg" alt="New York cityscape">
+              </div>
+              <div class="info-text">
+                <h3>Now and then</h3>
+                <h4>Research study about New York</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -135,8 +157,8 @@
     <div id="footer">
       <h4>&copy 2016 Colmar Academy. All Rights Reserved</h4>
       <ul class="nav">
-        <li class="nav-link"><a href="#">Terms</a></li>
-        <li class="nav-link"><a href="#">Privacy</a></li>
+        <li class="nav-link"><a class="styleda" href="#">Terms</a></li>
+        <li class="nav-link"><a class="styleda" href="#">Privacy</a></li>
       </ul>
     </div>
   </body>
