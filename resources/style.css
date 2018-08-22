@@ -165,6 +165,9 @@ img, video {
 /* Style the Information box */
 #main-information {
   display: flex;
+}
+
+#testimonial {
   margin-bottom: 2rem;
 }
 
@@ -177,6 +180,40 @@ img, video {
 
 #sack {
   background-color: LightGray;
+}
+
+/* Style Course section */
+#main-courses {
+  background-color: LightGray;
+}
+
+#course-listings {
+  padding: 1rem 3.5rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.course-boxes {
+  width: 30%;
+  margin: 1rem;
+  background-color: white;
+}
+
+.course-boxes img {
+  width: 100%
+  height  auto;
+}
+
+.course-text {
+  padding: 1rem 1rem 1.5rem 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.course-text a {
+  margin: 1rem 0;
 }
 
 /* Style the Thesis section */
