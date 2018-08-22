@@ -60,7 +60,7 @@ img, video {
 }
 
 /*Header Breakpoints */
-@media only screen and (max-width:460px) {
+@media only screen and (max-width:645px) {
   #header h4 {
     display: none;
   }
@@ -73,14 +73,16 @@ img, video {
   #logofirst, #logosecond {
     display: none;
   }
+  #header {
+    justify-content: center;
+  }
 }
 
-@media only screen and (min-width: 460px) {
+@media only screen and (min-width: 645px) {
   .nav-link img {
     display: none;
   }
 }
-
 
 /* Style the Logo */
 #logo {
@@ -183,6 +185,21 @@ img, video {
 #flavor-element {
   margin: 1.5rem 0;
   font-weight: normal;
+}
+
+@media only screen and (max-width:645px) {
+  #main-banner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #banner-left-pane {
+    width: 100%;
+    padding: 0;
+  }
+  #banner-right-pane {
+    width: 100%;
+    padding: 0 1rem 2rem;
+  }
 }
 
 /* Style the Information box */
