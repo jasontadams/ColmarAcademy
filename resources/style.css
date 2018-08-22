@@ -59,6 +59,29 @@ img, video {
   justify-content: space-between;
 }
 
+/*Header Breakpoints */
+@media only screen and (max-width:460px) {
+  #header h4 {
+    display: none;
+  }
+  #company-name {
+    display: none;
+  }
+  .nav-link {
+    margin: 0 1.2rem;
+  }
+  #logofirst, #logosecond {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 460px) {
+  .nav-link img {
+    display: none;
+  }
+}
+
+
 /* Style the Logo */
 #logo {
   display: flex;
