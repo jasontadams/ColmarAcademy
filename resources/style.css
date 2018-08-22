@@ -222,6 +222,34 @@ img, video {
   background-color: LightGray;
 }
 
+/* Style Information Box for Mobile */
+
+@media only screen and (max-width:645px) {
+  #testimonial {
+    display: none;
+  }
+  #info-cards {
+    width: 100%;
+    border-left: none;
+    border-bottom-color: LightGray;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+  }
+  #sack {
+    background-color: white;
+  }
+  .info-boxes {
+    display: block;
+    border: none;
+  }
+  .info-boxes-photo {
+    width: 100%;
+  }
+  .info-text {
+    padding: 1rem;
+  }
+}
+
 /* Style Course section */
 #main-courses {
   background-color: LightGray;
@@ -256,6 +284,35 @@ img, video {
   margin: 1rem 0;
 }
 
+/* Style the course section for mobile */
+
+@media only screen and (max-width:645px) {
+  .course-text h4, .course-text a {
+    display: none;
+  }
+  .course-text {
+    padding: 1rem 0 1rem 1.5rem;
+  }
+  .course-boxes {
+    width: 100%;
+    background-color: LightGray;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+  .course-boxes img {
+    display: none;
+  }
+  #course-listings {
+    display: block;
+    background-color: white;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  #main-courses {
+    background-color: white;
+    border-bottom: solid thin LightGray;
+  }
+}
+
 /* Style the Thesis section */
 #thesis-content {
   display: flex;
@@ -278,6 +335,20 @@ img, video {
   border-bottom: none;
 }
 
+/* Style the Thesis section for mobile */
+@media only screen and (max-width:645px) {
+  #thesis-cards {
+    display: none;
+  }
+  #thesis-left-pane h3, #thesis-left-pane p {
+    display: none;
+  }
+  #thesis-left-pane {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 /* Style the footer */
 #footer {
   display: flex;
@@ -289,4 +360,11 @@ img, video {
 
 #footer h3 {
   margin-left: 0.5rem;
+}
+
+/*Style Footer for Mobile */
+@media only screen and (max-width:645px) {
+  #footer .nav {
+    display: none;
+  }
 }
